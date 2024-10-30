@@ -5,14 +5,6 @@ def call(Map pipelineParams){
     tools{
         maven '3.9.9'
     }
-
-    // environment {
-    //     DOCKER_CREDENTIALS_ID = 'docker-login'  
-    //     DOCKER_IMAGE_NAME = 'naveentrodo/quizapp'  
-    //     DOCKER_TAG = 'latest'
-    //     gitUrl = 'https://github.com/naveenkumar1717/SpringBootMonolithicExample.git'
-    //     gitBranch = 'main'
-    // }
     stages {
         stage('Scm checkout') {
             steps {
